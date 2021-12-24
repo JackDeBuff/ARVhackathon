@@ -15,7 +15,7 @@ Once your machine learning model finished the prediction, return the (bounding b
 ### Example payload:
 
 ```javascript
-{"url":"https://rovula.com/image.png","image_id":1}
+{"url":"IMAGE_PATH.png","image_id":1}
 ```
 
 ### Example cURL:
@@ -25,7 +25,7 @@ curl -X POST \
   http://localhost/env/predict \
   -H 'accept: application/json' \
   -H 'content-type: application/json' \
-  -d '{"url":"https://rovula.com/image.png","image_id":1}'
+  -d '{"url":"IMAGE_PATH.png","image_id":1}'
 ```
 
 ### Example Response:
@@ -51,7 +51,7 @@ curl -X POST \
 Clone the repository:
 
 ```bash
-git clone https://github.com/Rovula/hackathon-fastapi.git
+git clone https://github.com/JackDeBuff/ARVhackathon.git
 ```
 
 First, go into the project folder and install the dependencies:
@@ -60,7 +60,7 @@ First, go into the project folder and install the dependencies:
 pip install -r requirements.txt
 ```
 
-For **local testing**, you have to change the [`path`](https://github.com/Rovula/hackathon-fastapi/blob/master/app/main.py#L10) variable. For example:
+For **local testing**, you have to change the [`path`](https://github.com/JackDeBuff/ARVhackathon/blob/master/app/main.py#L10) variable. For example:
 
 ```python
 # print(os.environ)
@@ -81,7 +81,7 @@ Go to http://127.0.0.1:8000 in the browser. Go to http://127.0.0.1:8000/docs to 
 
 ![](./doc/img2.png)
 
-You can try sending the example image url (https://github.com/Rovula/hackathon-fastapi/blob/master/doc/20201107122807098.png?raw=true) like this to see your implementation response:
+You can try sending the example image url (https://github.com/JackDeBuff/ARVhackathon/blob/master/doc/20201107122807098.png?raw=true) like this to see your implementation response:
 
 ![](./doc/img3.png)
 
